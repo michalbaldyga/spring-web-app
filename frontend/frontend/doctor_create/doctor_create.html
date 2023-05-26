@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="description" content="Hospital web application"/>
+  <meta name="keywords" content="Hospital"/>
+  <meta name="author" content="Michał Bałdyga"/>
+  <title>Hospital</title>
+  <link rel="stylesheet" href="../styles.css"/>
+  <script src="../script.js" defer="defer"></script>
+  <script type="module" src="doctor_create.js" defer="defer"></script>
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <h1>Hospital</h1>
+  </header>
+
+  <nav class="navigation-bar">
+    <ul>
+      <li><a href="../index.html">main</a></li>
+      <li><a href="../specialization_list/specialization_list.html">specializations</a></li>
+    </ul>
+  </nav>
+
+  <section class="main-section">
+    <article class="text--justified">
+      <header><h3>Create a new doctor:</h3></header>
+      <form id="newDoc">
+        <label for="name">Name: </label>
+        <input class="ui-control ui-input" id="name" name="name"/><br>
+        <label for="surname">Surname: </label>
+        <input class="ui-control ui-input" id="surname" name="surname"/><br>
+        <label for="age">Age: </label>
+        <input class="ui-control ui-input" id="age" name="age"/><br>
+        <input class="ui-control ui-button" type="submit" value="Create"/>
+      </form>
+    </article>
+  </section>
+
+  <footer class="footer">
+    <p>Copyright &copy; 2023, Michał Bałdyga</p>
+  </footer>
+</div>
+</body>
+</html>

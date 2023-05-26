@@ -1,0 +1,34 @@
+version: '3.9'
+
+services:
+  gateway:
+    container_name: gateway
+    build: ./spring-rest-gateway
+    networks:
+      - my_network
+  spec:
+    container_name: spec
+    build: ./spring-rest-spec
+    networks:
+      - my_network
+  doc:
+    container_name: doc
+    build: ./spring-rest-doctor
+    networks:
+      - my_network
+  frontend:
+    container_name: frontend
+    build: ./frontend
+    networks:
+      - my_network
+  proxy:
+    container_name: proxy
+    build: ./proxy
+    ports:
+      - "80:80"
+    networks:
+      - my_network
+
+networks:
+  my_network:
+    driver: bridge

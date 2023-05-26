@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="description" content="Hospital web application"/>
+  <meta name="keywords" content="Hospital"/>
+  <meta name="author" content="Michał Bałdyga"/>
+  <title>Hospital</title>
+  <link rel="stylesheet" href="../styles.css"/>
+  <script src="../script.js" defer="defer"></script>
+  <script type="module" src="specialization_create.js" defer="defer"></script>
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <h1>Hospital</h1>
+  </header>
+
+  <nav class="navigation-bar">
+    <ul>
+      <li><a href="../index.html">main</a></li>
+      <li><a href="../specialization_list/specialization_list.html">specializations</a></li>
+    </ul>
+  </nav>
+
+  <section class="main-section">
+    <article class="text--justified">
+      <header><h3>Create a new specialization:</h3></header>
+      <form id="newSpec">
+        <label for="name">Specialization name:</label>
+        <input class="ui-control ui-input" id="name" name="name"/><br>
+        <label for="years">Years of preparation:</label>
+        <input class="ui-control ui-input" id="years" name="years" type="number"/><br>
+        <label for="type">Type:</label>
+        <input class="ui-control ui-input" id="type" name="type"/><br>
+        <label for="difficulty_level">Difficulty level:</label>
+        <input class="ui-control ui-input" id="difficulty_level" name="difficulty_level" type="number"/><br>
+        <input class="ui-control ui-button" type="submit" value="Create"/>
+      </form>
+    </article>
+  </section>
+
+  <footer class="footer">
+    <p>Copyright &copy; 2023, Michał Bałdyga</p>
+  </footer>
+</div>
+</body>
+</html>

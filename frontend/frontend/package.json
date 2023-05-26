@@ -1,0 +1,15 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "lab 4 ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "http-server -p 8083 -c-1"
+  },
+  "author": "michal",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "0.12.3"
+  }
+}
